@@ -1,0 +1,14 @@
+{
+      "workbench.colorCustomizations": {
+            "[Material Theme*]": {
+                  "sideBar.background": "#000000",
+                  "editor.background": "#181717b2",
+                  "activityBar.background": "#000000",
+                  "toolbar.activeBackground": "#000000",
+                  "tab.inactiveBackground": "#000000"
+            },
+            "activityBar.background": "#322D1E",
+            "titleBar.activeBackground": "#45402A",
+            "titleBar.activeForeground": "#FBFAF8"
+      }
+}

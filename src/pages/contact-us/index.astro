@@ -1,0 +1,35 @@
+---
+import Layout from "layouts/Layout.astro";
+import TextFormat from "lib/helpers/TextFormat";
+import Fade from "react-reveal/Fade";
+import { url } from "lib/utils";
+
+import HowCanWeHelpSection from "components/ContactSales";
+const sections = [
+   {
+      heading: "Get Paid upfront",
+      paragraph: "We offer easy and fast payment options to our suppliers.",
+      img: "/images/contact/support.svg",
+   },
+   {
+      heading: "Flexible payment options",
+      paragraph: "We offer modular Pay Now and Pay Later options to our suppliers.",
+      img: "/images/contact/support2.svg",
+   },
+   // {
+   //    heading: "Integration partner network",
+   //    paragraph: "Are you having a problem integrating partner network? reach out to our experts",
+   //    img: "/images/contact/support3.svg",
+   // },
+];
+---
+
+<Layout title="Contact Us">
+   <main class="mt-20 flex w-full flex-col bg-primary-2">
+      <section class="">
+         <section class="py-16 md:pb-[8rem] md:pt-[5rem]">
+            <HowCanWeHelpSection client:load />
+         </section>
+      </section>
+   </main>
+</Layout>

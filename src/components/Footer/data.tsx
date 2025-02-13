@@ -39,7 +39,7 @@ export const FooterLinksData = [
 					soon: false,
 				},
 				{
-					title: "Advance Pay",
+					title: "Advance Pays",
 					url: "#",
 					soon: true,
 				},

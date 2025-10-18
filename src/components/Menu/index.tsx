@@ -1,119 +1,204 @@
-import menuIcon from "assets/menuIcon.svg";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useLockBodyScroll } from "lib/hooks/useLockBodyScroll";
-
+import { AnimatePresence, motion } from "framer-motion";
 import { createPortal } from "react-dom";
-import { url } from "lib/utils";
+import { url, cn } from "lib/utils";
 
 interface INavDrop {}
 
 const Menu = () => {
-	const [menuOpen, setMenuOpen] = useState(false);
+    const [menuOpen, setMenuOpen] = useState(false);
+    const [showCompany, setShowCompany] = useState(false);
 
-	useLockBodyScroll(menuOpen);
-	const ServicesData = [
-        { title: "Home", link: "/" },
-        { title: "Hire", link: "/hire" },
-        { title: "Join The Greenvest Africa", link: "/join" },
+    useLockBodyScroll(menuOpen);
+
+    const CompanyData = [
+        { title: "About Us", link: "/about-us" },
+        { title: "Contact Us", link: "/contact-us" },
     ];
-	const CompanyData = [
-		{ title: "About Us", link: "/about-us" },
-		{ title: "Contact Us", link: "/contact-us" },
-		{ title: "Terms of Service", link: "/terms" },
-		{ title: "Privacy Policy", link: "/privacy" },
-	];
 
-	return (
-		<>
-			<div
-				onClick={() => setMenuOpen(true)}
-				className="relative z-[100] grid h-[3rem] w-[3rem] cursor-pointer place-items-center rounded-[3.5rem] border border-[#E8E7EA]
-   bg-slate-100 transition-colors duration-300 ease-in-out active:bg-transparent
-      "
-			>
-				{/* <img src={url(menuIcon?.src)} alt="" /> */}
-				<img src={url("/svgs/menuIcon.svg")} alt="" />
-			</div>
-			{createPortal(
-				<div
-					className={`fixed z-[100] h-full ${
-						menuOpen ? `translate-x-0` : `!-translate-x-full`
-					} bottom-0 left-0 right-0  top-0 z-[200] flex w-[100vw] flex-col overflow-auto bg-white px-container-base transition-transform duration-300 ease-in-out`}
-				>
-					<div className="flex w-full items-center justify-between border-b border-b-gray-300 pb-[0.75rem] pt-[1.5rem] md:pb-[1rem] lg:border-b-secondary-1">
-						<a href="/" className="flex items-center gap-4">
-							<img
-								src={url("/images/n-logo.png")}
-								alt=""
-								className="w-24 object-contain lg:w-32"
-							/>
-						</a>
+    const mobileNavVariants = {
+        open: {
+            opacity: 1,
+            height: "auto",
+            transition: { duration: 0.15 },
+        },
+        closed: {
+            opacity: 0,
+            height: 0,
+            transition: { duration: 0.15 },
+        },
+    };
 
-						<svg
-							onClick={() => setMenuOpen(false)}
-							xmlns="http://www.w3.org/2000/svg"
-							width="24"
-							height="24"
-							viewBox="0 0 24 24"
-							fill="none"
-							stroke="currentColor"
-							strokeWidth="2"
-							strokeLinecap="round"
-							strokeLinejoin="round"
-							className="lucide lucide-x"
-						>
-							<path d="M18 6 6 18" />
-							<path d="m6 6 12 12" />
-						</svg>
-					</div>
-					<div className="flex flex-col gap-[1.5rem] py-[2rem]">
-						{/* <div className="flex flex-col gap-[1rem]">
-                     <h4 className="font-[700] text-secondary-2">Documentation</h4>
-                     {ServicesData.map((i, idx) => (
-                        <span key={idx} className="group cursor-pointer list-none">
-                           <span className="cursor-pointer text-[15px] font-[500] leading-[1.5rem] tracking-[0.005rem] !text-secondary-5 transition-colors duration-300 ease-in-out group-hover:!text-secondary-2">
-                              <a href={url(`${i?.link}`)}>{i?.title}</a>
-                           </span>
-                        </span>
-                     ))}
-                  </div> */}
-						<div className="flex flex-col gap-[1rem]">
-							<h4 className="font-[700] text-secondary-2">Company </h4>
-							{CompanyData.map((i, idx) => (
-								<span key={idx} className="group cursor-pointer list-none">
-									<span className="cursor-pointer text-[15px] font-[500] leading-[1.5rem] tracking-[0.005rem] !text-secondary-5 transition-colors duration-300 ease-in-out group-hover:!text-secondary-2">
-										<a href={url(`${i?.link}`)}>{i?.title}</a>
-									</span>
-								</span>
-							))}
-						</div>
-					</div>
+    const overlayVariants = {
+        open: {
+            opacity: 1,
+            transition: { duration: 0.3 },
+        },
+        closed: {
+            opacity: 0,
+            transition: { duration: 0.3 },
+        },
+    };
 
-					<div className="invisible mb-5 mt-14 flex  items-center   justify-center gap-4 transition-all duration-500 ease-in-out md:mb-0 md:ml-[-6px]">
-						<a href="#" className="">
-							<div className="flex items-center  justify-center gap-2 rounded-lg bg-primary-1 px-4 py-2 pr-6">
-								<div>
-									<a className="block px-6 py-2 text-base font-semibold tracking-wider text-white">
-										Sign Up
-									</a>
-								</div>
-							</div>
-						</a>
-						<a href="#" className="">
-							<div className="flex items-center justify-center gap-2 rounded-lg  bg-primary-1 px-4 py-2 pr-6">
-								<div>
-									<a className="block px-6 py-2 text-base font-semibold tracking-wider text-white">
-										Login
-									</a>
-								</div>
-							</div>
-						</a>
-					</div>
-				</div>,
-				document.body
-			)}
-		</>
-	);
+    return (
+        <>
+            <div
+                onClick={() => setMenuOpen(true)}
+                className="relative z-[100] grid h-[3rem] w-[3rem] cursor-pointer place-items-center rounded-[3.5rem] border border-[#E8E7EA] bg-slate-100 transition-colors duration-300 ease-in-out active:bg-transparent">
+                <img src={url("/svgs/menuIcon.svg")} alt="menu" />
+            </div>
+
+            {typeof window !== "undefined" &&
+                createPortal(
+                    <AnimatePresence>
+                        {menuOpen && (
+                            <motion.div
+                                key="mobile-menu-overlay"
+                                variants={overlayVariants}
+                                initial="closed"
+                                animate="open"
+                                exit="closed"
+                                className="fixed inset-0 z-[200] flex w-[100vw] flex-col overflow-auto bg-white">
+                                <div className="px-container-base">
+                                    <div className="flex w-full items-center justify-between border-b border-b-gray-300 pb-[0.75rem] pt-[1.5rem] md:pb-[1rem] lg:border-b-secondary-1">
+                                        <a href="/" className="flex items-center gap-4">
+                                            <img
+                                                src={url("/images/logoBlue.png")}
+                                                alt="logo"
+                                                className="w-24 object-contain lg:w-32"
+                                            />
+                                        </a>
+
+                                        <motion.svg
+                                            onClick={() => setMenuOpen(false)}
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="24"
+                                            height="24"
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                            stroke="currentColor"
+                                            strokeWidth="2"
+                                            strokeLinecap="round"
+                                            strokeLinejoin="round"
+                                            className="cursor-pointer transition-transform duration-200 ease-in-out hover:rotate-90"
+                                            whileHover={{ scale: 1.1 }}
+                                            whileTap={{ scale: 0.9 }}>
+                                            <path d="M18 6 6 18" />
+                                            <path d="m6 6 12 12" />
+                                        </motion.svg>
+                                    </div>
+
+                                    <motion.div
+                                        initial={{ opacity: 0, y: 20 }}
+                                        animate={{ opacity: 1, y: 0 }}
+                                        transition={{ duration: 0.3, delay: 0.1 }}
+                                        className="mt-5 flex flex-col">
+                                        {/* Company Section with Dropdown */}
+                                        <div className={cn(`${showCompany ? "rounded-[5px] bg-primary-1/10" : ""}`)}>
+                                            <div
+                                                onClick={() => setShowCompany(!showCompany)}
+                                                className={cn(
+                                                    `flex cursor-pointer items-center justify-between ${
+                                                        showCompany ? "border-b-0" : "border-b border-b-gray-300"
+                                                    } px-4 py-4 text-base font-semibold transition-all duration-200 ease-out`
+                                                )}>
+                                                <span className="block text-secondary-2">Company</span>
+                                                <motion.div
+                                                    animate={{ rotate: showCompany ? 270 : 180 }}
+                                                    transition={{ duration: 0.2 }}
+                                                    className="transition-transform">
+                                                    <svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        width="20"
+                                                        height="20"
+                                                        viewBox="0 0 24 24"
+                                                        fill="none"
+                                                        stroke="currentColor"
+                                                        strokeWidth="2"
+                                                        strokeLinecap="round"
+                                                        strokeLinejoin="round">
+                                                        <path d="m18 15-6-6-6 6" />
+                                                    </svg>
+                                                </motion.div>
+                                            </div>
+
+                                            <AnimatePresence>
+                                                {showCompany && (
+                                                    <motion.div
+                                                        key="company-dropdown"
+                                                        variants={mobileNavVariants}
+                                                        initial="closed"
+                                                        animate="open"
+                                                        exit="closed"
+                                                        className="overflow-hidden">
+                                                        <div className="px-4 pb-2.5">
+                                                            {CompanyData.map((item, idx) => (
+                                                                <motion.div
+                                                                    key={idx}
+                                                                    initial={{ opacity: 0, x: -20 }}
+                                                                    animate={{ opacity: 1, x: 0 }}
+                                                                    transition={{ duration: 0.2, delay: idx * 0.05 }}
+                                                                    className="border-b border-b-gray-200 py-3.5 last:border-none">
+                                                                    <a
+                                                                        href={url(item.link)}
+                                                                        onClick={() => {
+                                                                            setMenuOpen(false);
+                                                                            setShowCompany(false);
+                                                                        }}
+                                                                        className="block py-2 text-[15px] font-[500] leading-[1.5rem] tracking-[0.005rem] text-secondary-5 transition-colors duration-200 ease-out hover:text-primary-1">
+                                                                        {item.title}
+                                                                    </a>
+                                                                </motion.div>
+                                                            ))}
+                                                        </div>
+                                                    </motion.div>
+                                                )}
+                                            </AnimatePresence>
+                                        </div>
+
+                                        {/* Direct Links */}
+                                        {/* <motion.a
+                                            href={url("/#features")}
+                                            onClick={() => setMenuOpen(false)}
+                                            className="flex items-center gap-2 border-b border-b-gray-300 px-4 py-4 text-base font-semibold text-secondary-2 transition-all duration-200 ease-out hover:text-primary-1"
+                                            whileHover={{ x: 5 }}>
+                                            <span className="block">Features</span>
+                                        </motion.a> */}
+
+                                        <motion.a
+                                            href={url("/contact-us")}
+                                            onClick={() => setMenuOpen(false)}
+                                            className="flex items-center gap-2 border-b border-b-gray-300 px-4 py-4 text-base font-semibold text-secondary-2 transition-all duration-200 ease-out last:border-none hover:text-primary-1"
+                                            whileHover={{ x: 5 }}>
+                                            <span className="block">Contact Us</span>
+                                        </motion.a>
+                                    </motion.div>
+
+                                    <motion.div
+                                        initial={{ opacity: 0, y: 20 }}
+                                        animate={{ opacity: 1, y: 0 }}
+                                        transition={{ duration: 0.3, delay: 0.2 }}
+                                        className="mb-5 mt-auto flex flex-col gap-3 py-6">
+                                        <a href="#contact" onClick={() => setMenuOpen(false)}>
+                                            <motion.div
+                                                whileHover={{ scale: 1.02 }}
+                                                whileTap={{ scale: 0.98 }}
+                                                className="flex w-full items-center justify-center rounded-lg bg-primary-1 px-6 py-4">
+                                                <span className="text-base font-bold tracking-wider text-white">
+                                                    Get Started
+                                                </span>
+                                            </motion.div>
+                                        </a>
+                                    </motion.div>
+                                </div>
+                            </motion.div>
+                        )}
+                    </AnimatePresence>,
+                    document.body
+                )}
+        </>
+    );
 };
 
 export default Menu;

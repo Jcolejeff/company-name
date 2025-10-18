@@ -67,23 +67,23 @@ const ReviewSlide = () => {
 	];
 
 	const reviews = [
-		{
-			img: "https://images.unsplash.com/photo-1509721434272-b79147e0e708?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80",
-			text: ` “Company-Name app is absolutely amazing! It's incredibly user-friendly and has completely transformed how I handle my finances."`,
-			date: "15 may 2023",
-		},
-		{
-			img: "https://images.unsplash.com/photo-1506710507565-203b9f24669b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1536&q=80",
-			text: ` “I have been using this app for a while now and I can say that it has made my life so much easier. I can now manage my finances with ease.`,
-			date: "25 june 2023",
-		},
-		{
-			img: "https://images.unsplash.com/photo-1536987333706-fc9adfb10d91?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80",
+        {
+            img: "https://images.unsplash.com/photo-1509721434272-b79147e0e708?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80",
+            text: ` “Greenvest Africa app is absolutely amazing! It's incredibly user-friendly and has completely transformed how I handle my finances."`,
+            date: "15 may 2023",
+        },
+        {
+            img: "https://images.unsplash.com/photo-1506710507565-203b9f24669b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1536&q=80",
+            text: ` “I have been using this app for a while now and I can say that it has made my life so much easier. I can now manage my finances with ease.`,
+            date: "25 june 2023",
+        },
+        {
+            img: "https://images.unsplash.com/photo-1536987333706-fc9adfb10d91?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80",
 
-			text: `Company-Name app is absolutely amazing! It's incredibly user-friendly and has completely transformed how I handle my finances.`,
-			date: " 10 February 2023",
-		},
-	];
+            text: `Greenvest Africa app is absolutely amazing! It's incredibly user-friendly and has completely transformed how I handle my finances.`,
+            date: " 10 February 2023",
+        },
+    ];
 
 	return (
 		<section className=" pb-12 ">

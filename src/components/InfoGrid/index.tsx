@@ -7,31 +7,27 @@ import { SectionWrapper } from "../../hoc";
 
 const InfoGrid = () => {
 	const data = [
-		{
-			image: "/images/receipts/iconOne.svg",
-			heading: "Connect with main contractors on Company-Name",
-			paragraph:
-				"Start by linking with your main contractor on Company-Name and get your project rolling!.",
-		},
-		{
-			image: "/images/receipts/iconTwo.svg",
-			heading: "Upload your project details to the Company-Name platform",
-			paragraph:
-				"Easily upload your project agreement and material requirements for swift approval.",
-		},
-		{
-			image: "/images/receipts/icon.svg",
-			heading: "Get your materials financed",
-			paragraph:
-				"Receive direct financing for your materials, ensuring no delays in your project.",
-		},
-		{
-			image: "/images/receipts/icon.svg",
-			heading: "Simple Fee",
-			paragraph:
-				"Pay a simple fee on the financed amount, with no hidden charges.",
-		},
-	];
+        {
+            image: "/images/receipts/iconOne.svg",
+            heading: "Connect with main contractors on Greenvest Africa",
+            paragraph: "Start by linking with your main contractor on Greenvest Africa and get your project rolling!.",
+        },
+        {
+            image: "/images/receipts/iconTwo.svg",
+            heading: "Upload your project details to the Greenvest Africa platform",
+            paragraph: "Easily upload your project agreement and material requirements for swift approval.",
+        },
+        {
+            image: "/images/receipts/icon.svg",
+            heading: "Get your materials financed",
+            paragraph: "Receive direct financing for your materials, ensuring no delays in your project.",
+        },
+        {
+            image: "/images/receipts/icon.svg",
+            heading: "Simple Fee",
+            paragraph: "Pay a simple fee on the financed amount, with no hidden charges.",
+        },
+    ];
 	return (
 		<div>
 			<p className="mb-12 max-w-[37.75rem] text-[1.4rem] font-semibold tracking-[0.00563rem] md:text-[1.6rem] md:leading-[1.7rem]">

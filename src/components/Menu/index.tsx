@@ -12,10 +12,10 @@ const Menu = () => {
 
 	useLockBodyScroll(menuOpen);
 	const ServicesData = [
-		{ title: "Home", link: "/" },
-		{ title: "Hire", link: "/hire" },
-		{ title: "Join The Company-Name", link: "/join" },
-	];
+        { title: "Home", link: "/" },
+        { title: "Hire", link: "/hire" },
+        { title: "Join The Greenvest Africa", link: "/join" },
+    ];
 	const CompanyData = [
 		{ title: "About Us", link: "/about-us" },
 		{ title: "Contact Us", link: "/contact-us" },

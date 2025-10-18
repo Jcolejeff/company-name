@@ -33,56 +33,54 @@ const services = [
 ];
 
 const experiences = [
-	{
-		title: "Secure the necessary funding for any ongoing or planned project.",
-		company_name: "Teqia",
-		icon: "/images/landing-page/zcomb.svg",
-		iconBg: "#E6DEDD",
-		date: "Jun 2023 - Present",
-		points: [
-			"Confidently bid on larger projects, assured by the backing to handle them.",
-			"Obtain financing to cover initial expenses, setting new ventures in motion.",
-			"Secure capital to address your business's immediate financial requirements.",
-		],
-	},
-	{
-		title:
-			"Discover adaptable solutions that evolve in tandem with your business's dynamic requirements.",
-		company_name: "Tanta Innovative Ltd",
-		icon: "/images/landing-page/zcomb.svg",
-		iconBg: "#383E56",
-		date: "Feb 2023 - August 2023",
-		points: [
-			"Access tailored project-based credit lines designed for construction business demands.",
-			"Protect your credit lines while expanding your bonding capabilities.",
-			"Enhance your purchasing leverage with suppliers to optimize material cost savings.",
-		],
-	},
-	{
-		title:
-			"Empower Your Business Planning on Your Terms with Company-Name in Your Arsenal",
-		company_name: "Street Bazaar",
-		icon: "/images/landing-page/zcomb.svg",
-		iconBg: "#E6DEDD",
-		date: "Sept 2022 - May 2023",
-		points: [
-			"Achieve stability and predictability with efficient management of accounts receivables.",
-			"Utilize your newfound competitive edge to strategize for desired growth.",
-			"Focus investments on areas of your business that align with your long-term objectives.",
-		],
-	},
-	// {
-	//    title: "Training Manager",
-	//    company_name: "Symbolic Digital Concept",
-	//    icon: "/images/landing-page/zcomb.svg",
-	//    iconBg: "#383E56",
-	//    date: "Jan 2022 - Jan 2023",
-	//    points: [
-	//       "Created effective instructional materials, including lesson plans, learning resources, and assessments. I employed instructional design principles to enhance the learning experience.",
-	//       "Monitored and evaluated the quality of teaching and learning within the organization. This includes assessing instructors, course materials, and overall program effectiveness",
-	//       "Oversaw a team of instructors, mentors, and support staff. Also coordinated training schedules, assignments, and professional development for their team.",
-	//    ],
-	// },
+    {
+        title: "Secure the necessary funding for any ongoing or planned project.",
+        company_name: "Teqia",
+        icon: "/images/landing-page/zcomb.svg",
+        iconBg: "#E6DEDD",
+        date: "Jun 2023 - Present",
+        points: [
+            "Confidently bid on larger projects, assured by the backing to handle them.",
+            "Obtain financing to cover initial expenses, setting new ventures in motion.",
+            "Secure capital to address your business's immediate financial requirements.",
+        ],
+    },
+    {
+        title: "Discover adaptable solutions that evolve in tandem with your business's dynamic requirements.",
+        company_name: "Tanta Innovative Ltd",
+        icon: "/images/landing-page/zcomb.svg",
+        iconBg: "#383E56",
+        date: "Feb 2023 - August 2023",
+        points: [
+            "Access tailored project-based credit lines designed for construction business demands.",
+            "Protect your credit lines while expanding your bonding capabilities.",
+            "Enhance your purchasing leverage with suppliers to optimize material cost savings.",
+        ],
+    },
+    {
+        title: "Empower Your Business Planning on Your Terms with Greenvest Africa in Your Arsenal",
+        company_name: "Street Bazaar",
+        icon: "/images/landing-page/zcomb.svg",
+        iconBg: "#E6DEDD",
+        date: "Sept 2022 - May 2023",
+        points: [
+            "Achieve stability and predictability with efficient management of accounts receivables.",
+            "Utilize your newfound competitive edge to strategize for desired growth.",
+            "Focus investments on areas of your business that align with your long-term objectives.",
+        ],
+    },
+    // {
+    //    title: "Training Manager",
+    //    company_name: "Symbolic Digital Concept",
+    //    icon: "/images/landing-page/zcomb.svg",
+    //    iconBg: "#383E56",
+    //    date: "Jan 2022 - Jan 2023",
+    //    points: [
+    //       "Created effective instructional materials, including lesson plans, learning resources, and assessments. I employed instructional design principles to enhance the learning experience.",
+    //       "Monitored and evaluated the quality of teaching and learning within the organization. This includes assessing instructors, course materials, and overall program effectiveness",
+    //       "Oversaw a team of instructors, mentors, and support staff. Also coordinated training schedules, assignments, and professional development for their team.",
+    //    ],
+    // },
 ];
 
 const testimonials = [

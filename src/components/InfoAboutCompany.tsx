@@ -67,35 +67,35 @@ const Card = ({
 };
 const InfoAboutCompany = () => {
 	return (
-		<section className="flex flex-col gap-12 lg:flex-row ">
-			<motion.div variants={textVariant(0.1)}>
-				<div className="flex h-full flex-col items-center justify-center gap-6 2xl:gap-8">
-					<p className=" mt-4  font-extrabold leading-[30px] md:text-lg">
-						<TextFormat
-							text={`Company-Name Products`}
-							keyword={"Company-Name"}
-							keywordClassName=" 
+        <section className="flex flex-col gap-12 lg:flex-row ">
+            <motion.div variants={textVariant(0.1)}>
+                <div className="flex h-full flex-col items-center justify-center gap-6 2xl:gap-8">
+                    <p className=" mt-4  font-extrabold leading-[30px] md:text-lg">
+                        <TextFormat
+                            text={`Greenvest Africa Products`}
+                            keyword={"Greenvest Africa"}
+                            keywordClassName=" 
                      text-secondary-1 transition-all duration-500 ease-in-out"
-						/>
-					</p>
-					<h5 className="text-center text-[1.6rem] font-[700] leading-[130%] tracking-[0.02rem] text-white transition-all duration-500 ease-in-out md:max-w-[80rem] md:text-[2.6rem] md:leading-[3rem] md:tracking-[0.0225rem] lg:ml-[-0.2rem] lg:text-[3rem]">
-						<TextFormat
-							text={`Free your business from the broken repayment chain`}
-							keyword={"business"}
-							keywordClassName=" 
+                        />
+                    </p>
+                    <h5 className="text-center text-[1.6rem] font-[700] leading-[130%] tracking-[0.02rem] text-white transition-all duration-500 ease-in-out md:max-w-[80rem] md:text-[2.6rem] md:leading-[3rem] md:tracking-[0.0225rem] lg:ml-[-0.2rem] lg:text-[3rem]">
+                        <TextFormat
+                            text={`Free your business from the broken repayment chain`}
+                            keyword={"business"}
+                            keywordClassName=" 
                      text-secondary-1 transition-all duration-500 ease-in-out"
-						/>
-					</h5>
-				</div>
-			</motion.div>
+                        />
+                    </h5>
+                </div>
+            </motion.div>
 
-			<div className=" flex w-full flex-wrap justify-center gap-7">
-				{projects.map((project, index) => (
-					<Card key={`project-${index}`} index={index} {...project} />
-				))}
-			</div>
-		</section>
-	);
+            <div className=" flex w-full flex-wrap justify-center gap-7">
+                {projects.map((project, index) => (
+                    <Card key={`project-${index}`} index={index} {...project} />
+                ))}
+            </div>
+        </section>
+    );
 };
 
 export default SectionWrapper(InfoAboutCompany, "work");

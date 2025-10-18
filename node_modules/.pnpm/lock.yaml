@@ -68,9 +68,6 @@ importers:
       '@tailwindcss/forms':
         specifier: ^0.5.3
         version: 0.5.3(tailwindcss@3.3.2)
-      '@types/react':
-        specifier: ^18.0.21
-        version: 18.2.14
       '@types/react-dom':
         specifier: ^18.0.6
         version: 18.2.6
@@ -186,6 +183,9 @@ importers:
       '@types/lodash':
         specifier: ^4.14.197
         version: 4.14.197
+      '@types/react':
+        specifier: ^18.2.14
+        version: 18.2.14
       '@types/react-lazy-load-image-component':
         specifier: ^1.5.3
         version: 1.5.3

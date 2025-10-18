@@ -1,7 +1,7 @@
-# Company-Name landing
+# Greenvest Africa landing
 
 ```
-landing page for the Company-Name platform
+landing page for the Greenvest Africa platform
 ```
 
 ## 🚀 Project Structure

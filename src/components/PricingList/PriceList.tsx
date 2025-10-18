@@ -23,42 +23,32 @@ const PriceList = () => {
 	const [index, setIndex] = React.useState(0);
 
 	const pricingOptions = [
-		{
-			title: "Business",
-			price: prices[index].prices[0],
-			for: "Ideal for growing businesses that need more customers",
-			features: [
-				"Customizable Company-Name",
-				"Basic Support",
-				"One Integration",
-				"Email support",
-			],
-		},
-		{
-			title: "Business Pro",
-			price: prices[index].prices[1],
-			for: "For large organization with specific needs",
-			features: [
-				"Customizable Company-Name",
-				"Priority support",
-				"Three Integration",
-				"Email support",
-			],
-		},
-		{
-			title: "Business Max",
-			price: prices[index].prices[2],
-			for: "For large organization with specific needs",
-			features: [
-				"Customizable Company-Name",
-				"Priority support",
-				"One Integration",
-				"Email support",
-				"Unlimited integrations",
-				"Unlimited integrations",
-			],
-		},
-	];
+        {
+            title: "Business",
+            price: prices[index].prices[0],
+            for: "Ideal for growing businesses that need more customers",
+            features: ["Customizable Greenvest Africa", "Basic Support", "One Integration", "Email support"],
+        },
+        {
+            title: "Business Pro",
+            price: prices[index].prices[1],
+            for: "For large organization with specific needs",
+            features: ["Customizable Greenvest Africa", "Priority support", "Three Integration", "Email support"],
+        },
+        {
+            title: "Business Max",
+            price: prices[index].prices[2],
+            for: "For large organization with specific needs",
+            features: [
+                "Customizable Greenvest Africa",
+                "Priority support",
+                "One Integration",
+                "Email support",
+                "Unlimited integrations",
+                "Unlimited integrations",
+            ],
+        },
+    ];
 	return (
 		<section className="container relative w-full max-w-[1700px] overflow-x-hidden bg-primary-2 px-container-base md:py-[4.5rem] md:pt-[2.5rem] lg:px-container-lg xl:px-container-xl">
 			<div className="flex w-full flex-col gap-[2.5rem]">

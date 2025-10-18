@@ -35,18 +35,16 @@ const Features = () => {
 
 	return (
         <>
-            <motion.div variants={textVariant(0.1)}>
-                <div className="flex flex-col items-center justify-center gap-6 2xl:gap-8">
-                    <h1 className="text-center text-[1.6rem] font-[700] leading-[130%] tracking-[0.02rem] text-white transition-all duration-500 ease-in-out md:max-w-[90rem] md:leading-[4rem] md:tracking-[0.0225rem] lg:ml-[-0.2rem] lg:text-[2.6rem] xxl:text-[3rem]">
-                        <TextFormat
-                            text={`Why Choose Greenvest Africa `}
-                            keyword={"Greenvest Africa"}
-                            keywordClassName=" 
+            <div className="flex flex-col items-center justify-center gap-6 2xl:gap-8">
+                <h1 className="text-center text-[1.6rem] font-[700] leading-[130%] tracking-[0.02rem] text-white transition-all duration-500 ease-in-out md:max-w-[90rem] md:leading-[4rem] md:tracking-[0.0225rem] lg:ml-[-0.2rem] lg:text-[2.6rem] xxl:text-[3rem]">
+                    <TextFormat
+                        text={`Why Choose Greenvest Africa `}
+                        keyword={"Greenvest Africa"}
+                        keywordClassName=" 
                      text-secondary-1 transition-all duration-500 ease-in-out"
-                        />
-                    </h1>
-                </div>
-            </motion.div>
+                    />
+                </h1>
+            </div>
 
             <div className=" mt-8">
                 {/* <div className="flex w-full justify-center">

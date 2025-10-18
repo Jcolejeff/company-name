@@ -86,10 +86,10 @@ function ContactUsForm({ businessType, title, subTitle, breadcrumb }: Iprops) {
 
       try {
          const data = await emailjs.sendForm(
-            "service_k08w62w",
-            "template_fsbxx8c",
-            formRef.current as HTMLFormElement,
-            "X3OkpMZncUC0S79v4",
+             "service_k08w62w",
+             "template_qijh2yc",
+             formRef.current as HTMLFormElement,
+             "X3OkpMZncUC0S79v4"
          );
          // setMessage({ text: data?.text, isError: false });
 

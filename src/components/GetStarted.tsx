@@ -71,13 +71,13 @@ const GetStartedForm = () => {
 		setFormIsLoading(true);
 
 		try {
-			// const data = await emailjs.sendForm(
-			//    "service_f2ja3b8",
-			//    "template_6z8o098",
-			//    formRef.current as HTMLFormElement,
-			//    "30meubG4UgtRoKoLr",
-			// );
-			// setMessage({ text: data?.text, isError: false });
+			 const data = await emailjs.sendForm(
+                 "service_k08w62w",
+                 "template_qijh2yc",
+                 formRef.current as HTMLFormElement,
+                 "X3OkpMZncUC0S79v4"
+             );
+             setMessage({ text: data?.text, isError: false });
 			toast.info("Thanks for signing up, We will notify you when we launch!", {
 				position: "top-right",
 				autoClose: 5000,

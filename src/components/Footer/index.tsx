@@ -44,10 +44,18 @@ const Footer = ({}: IFooter) => {
                     Copyright © {new Date().getFullYear()} Greenvest Africa technologies ltd All Rights Reserved
                 </p>
                 <div className="flex w-1/2   gap-8">
-                    <img src={url("/images/footer/fb.svg")} alt="" />
-                    <img src={url("/images/footer/insta.svg")} alt="" />
-                    <img src={url("/images/footer/link.svg")} alt="" />
-                    <img src={url("/images/footer/x.svg")} alt="" />
+                    <a href="https://www.linkedin.com/company/greenvest-africa/">
+                        <img src={url("/images/footer/fb.svg")} alt="" />
+                    </a>
+                    <a href="https://www.linkedin.com/company/greenvest-africa/">
+                        <img src={url("/images/footer/insta.svg")} alt="" />
+                    </a>
+                    <a href="https://www.linkedin.com/company/greenvest-africa/">
+                        <img src={url("/images/footer/link.svg")} alt="" />
+                    </a>
+                    <a href="https://www.linkedin.com/company/greenvest-africa/">
+                        <img src={url("/images/footer/x.svg")} alt="" />
+                    </a>
                 </div>
             </div>
         </div>

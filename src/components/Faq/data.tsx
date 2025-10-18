@@ -6,7 +6,7 @@ export const FAQdata = [
         collection: "faq",
         data: {
             question: "What is Greenvest Africa?",
-            answer: "Greenvest Africa is a pioneering platform offering project-based construction material financing for subcontractors. We connect subcontractors with financial solutions, enabling them to procure materials by bridging the gap between their immediate funding needs and later payments from main contractors.",
+            answer: "Greenvest Africa is a pioneering platform that turns your waste into wealth. We reward individuals and businesses with instant cash or points for recycling plastics and paper. Simply drop off your materials at our collection points or use our mobile app, and get paid immediately via app, USSD, or cash.",
         },
         render: null,
     },
@@ -16,8 +16,8 @@ export const FAQdata = [
         body: "",
         collection: "faq",
         data: {
-            question: "How does Greenvest Africa work for subcontractors?",
-            answer: "Subcontractors can sign up on Greenvest Africa and link their projects with main contractors. Once a project is established, they can apply for financing by uploading their material requirements and supplier details. Upon approval, Greenvest Africa directly pays the suppliers, and the subcontractor repays the loan when they receive payment from the main contractor.",
+            question: "How does Greenvest Africa work?",
+            answer: "It's simple! Sign up on our mobile app or dial our USSD code. Collect and sort your plastics and paper. Bring them to any of our drop-off locations across Nigeria or request pickup through the app. Your materials are weighed, and you receive instant payment in cash, via mobile transfer, or as points you can redeem later.",
         },
         render: null,
     },
@@ -27,8 +27,8 @@ export const FAQdata = [
         body: "",
         collection: "faq",
         data: {
-            question: "What are the benefits for main contractors using Greenvest Africa?",
-            answer: "Main contractors can streamline their projects by ensuring their subcontractors have timely access to necessary materials. This reduces project delays and enhances overall efficiency and reliability.",
+            question: "What materials do you accept?",
+            answer: "We currently accept plastics (PET bottles, HDPE containers, plastic bags) and paper materials (newspapers, cardboard, office paper, magazines). Materials should be clean, dry, and sorted by type for the best rates.",
         },
         render: null,
     },
@@ -38,8 +38,8 @@ export const FAQdata = [
         body: "",
         collection: "faq",
         data: {
-            question: "How do suppliers benefit from Greenvest Africa?",
-            answer: "Suppliers registered on Greenvest Africa receive direct payments for their materials, ensuring timely and secure transactions. This helps in maintaining a steady cash flow and building strong business relationships with subcontractors and main contractors.",
+            question: "How do I get paid for my recyclables?",
+            answer: "We offer multiple payment options for your convenience. You can receive instant cash at our drop-off points, mobile money transfer through the app, bank transfer, or accumulate points to redeem for higher rewards later. You can even withdraw via USSD without internet connection.",
         },
         render: null,
     },
@@ -49,8 +49,8 @@ export const FAQdata = [
         body: "",
         collection: "faq",
         data: {
-            question: "What types of projects are eligible for financing on Greenvest Africa?",
-            answer: "Greenvest Africa provides financing for a wide range of construction projects, including residential, commercial, and infrastructure projects. The key requirement is that the project must involve a subcontractor and a main contractor.",
+            question: "What is USSD and how does it work?",
+            answer: "USSD is a mobile technology that works on any phone without internet. Dial our USSD code to check your balance, view nearby drop-off points, and request withdrawals even when you don't have data or WiFi. This makes Greenvest accessible to everyone across Nigeria.",
         },
         render: null,
     },
@@ -60,8 +60,8 @@ export const FAQdata = [
         body: "",
         collection: "faq",
         data: {
-            question: "What is the process for loan repayment?",
-            answer: "Once a subcontractor completes a project milestone and receives payment from the main contractor, the payment is made into their settlement account on Greenvest Africa. We then deduct the loan amount plus interest, and the balance is transferred to the subcontractor's main account.",
+            question: "Where are your drop-off locations?",
+            answer: "We have multiple drop-off points across major cities in Nigeria. You can find the nearest location using our mobile app's location finder or by dialing our USSD code. We're constantly expanding to serve more communities.",
         },
         render: null,
     },
@@ -71,8 +71,8 @@ export const FAQdata = [
         body: "",
         collection: "faq",
         data: {
-            question: "How is the interest rate on loans determined?",
-            answer: "The interest rate is determined based on several factors, including the loan amount, project duration, and the risk assessment of the project. We ensure our rates are competitive and transparent.",
+            question: "How are the rates for recyclables determined?",
+            answer: "Our rates are based on material type, quality, and current market prices. We offer competitive rates that are often better than traditional waste buyers. All rates are transparent and displayed in the app and at drop-off points. Clean, sorted materials earn higher rates.",
         },
         render: null,
     },
@@ -82,8 +82,8 @@ export const FAQdata = [
         body: "",
         collection: "faq",
         data: {
-            question: "How do I sign up as a supplier?",
-            answer: "Suppliers can sign up on Greenvest Africa by creating an account, providing their business details, and undergoing a verification process. Once verified, they can be linked to projects and receive direct payments through the platform.",
+            question: "Can businesses and organizations use Greenvest Africa?",
+            answer: "Absolutely! We offer tailored Business Recycling solutions including scheduled pickups, bulk rates, dedicated account management, and monthly impact reports. This helps organizations meet their sustainability goals while earning from their waste.",
         },
         render: null,
     },
@@ -94,7 +94,7 @@ export const FAQdata = [
         collection: "faq",
         data: {
             question: "Are there any fees for using Greenvest Africa?",
-            answer: "Greenvest Africa charges a service fee for the financing provided. The exact fee structure depends on the project size and complexity. We believe in transparency, so all fees are clearly communicated upfront.",
+            answer: "No! Signing up and using Greenvest Africa is completely free. We make money by processing and reselling the recycled materials. You simply bring your waste and get paid - no hidden charges or subscription fees.",
         },
         render: null,
     },
@@ -104,7 +104,7 @@ export const FAQdata = [
         body: "",
         collection: "faq",
         data: {
-            question: "How does Greenvest Africa ensure the security of transactions?",
+            question: "How does Greenvest Africa ensure secure transactions?",
             answer: "We prioritize the security of all transactions on our platform. Greenvest Africa uses advanced encryption and security protocols to protect user data and financial transactions. Regular audits and compliance checks are conducted to maintain high security standards.",
         },
         render: null,
@@ -115,8 +115,8 @@ export const FAQdata = [
         body: "",
         collection: "faq",
         data: {
-            question: "Can I use Greenvest Africa for multiple projects simultaneously?",
-            answer: "Yes, subcontractors and main contractors can manage multiple projects simultaneously on Greenvest Africa. Our platform is designed to handle various projects, providing financing solutions for each according to its specific needs.",
+            question: "How do I track my recycling impact?",
+            answer: "Our mobile app provides detailed tracking of your recycling history, total earnings, weight of materials recycled, and estimated environmental impact (CO2 emissions avoided, trees saved). You can view your impact dashboard anytime and share your achievements.",
         },
         render: null,
     },
@@ -127,7 +127,7 @@ export const FAQdata = [
         collection: "faq",
         data: {
             question: "How can I contact Greenvest Africa for support?",
-            answer: "For any support or inquiries, you can contact us through the support section on our website. We offer customer service via email, phone, and live chat to assist you with any questions or issues you may have.",
+            answer: "For any support or inquiries, you can contact us through the support section on our website or mobile app. We offer customer service via email, phone, WhatsApp, and live chat to assist you with any questions or issues you may have.",
         },
         render: null,
     },

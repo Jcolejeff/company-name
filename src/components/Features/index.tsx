@@ -10,24 +10,24 @@ import { SectionWrapper } from "../../hoc";
 const Features = () => {
 	const sections = [
         {
-            heading: "Hassle-free Material Financing",
-            paragraph: "Quick and easy access to funds for your construction materials.",
-            img: " /images/landing-page/scale.svg",
+            heading: "Turn Your Waste Into Cash",
+            paragraph: "Quick and easy rewards for recycling your plastics and paper materials.",
+            img: "/images/landing-page/scale.svg",
         },
         {
-            heading: "Grow Your Business",
-            paragraph: "Take on more projects with reliable financial support.",
-            img: " /images/landing-page/scale.svg",
+            heading: "Recycle Anytime, Anywhere",
+            paragraph: "Drop off at convenient locations across Nigeria or use our mobile app.",
+            img: "/images/landing-page/scale.svg",
         },
         {
-            heading: "B2B Payments Made Easy",
-            paragraph: "Pay your suppliers directly with Greenvest Africa, no intermediaries.",
-            img: " /images/landing-page/scale.svg",
+            heading: "Instant Payment Options",
+            paragraph: "Get paid via mobile app, USSD, or direct cash - whatever works for you.",
+            img: "/images/landing-page/scale.svg",
         },
         {
-            heading: "Secure Transactions",
-            paragraph: "Safe and direct payments to suppliers, with no interference.",
-            img: " /images/landing-page/scale.svg",
+            heading: "Better Rates, Real Impact",
+            paragraph: "Earn competitive rewards while helping create a cleaner Nigeria.",
+            img: "/images/landing-page/scale.svg",
         },
     ];
 	const [index, setIndex] = React.useState(0);

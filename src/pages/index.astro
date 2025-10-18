@@ -136,8 +136,8 @@ const images = [
                 <h4
                     class="mb-[6rem] text-[1.3rem] font-[700] tracking-[0.0125rem] text-secondary-2 lg:text-[1.8rem] lg:leading-[2.5rem] xxl:max-w-[70%]">
                     <TextFormat
-                        text={"Achieve on time delivery of multiple projects without stretching your company finances."}
-                        keyword={"company finances."}
+                        text={"Turn everyday waste into steady income while building a cleaner Nigeria."}
+                        keyword={"cleaner Nigeria."}
                         keywordClassName="text-primary-1 transition-all duration-500 ease-in-out"
                     />
                 </h4>
@@ -160,7 +160,7 @@ const images = [
                     <h1
                         class="max-w-[80rem] text-center text-[1.6rem] font-[700] leading-[130%] tracking-[0.02rem] transition-all duration-500 ease-in-out md:leading-[5rem] md:tracking-[0.0225rem] lg:ml-[-0.2rem] lg:text-[2.6rem] xxl:text-[4rem]">
                         <TextFormat
-                            text={`Greenvest Africa offers project based financing.`}
+                            text={`Greenvest Africa makes recycling profitable for everyone in Nigeria.`}
                             keyword={"Greenvest Africa"}
                             keywordClassName="text-primary-1 transition-all duration-500 ease-in-out"
                         />
@@ -170,49 +170,12 @@ const images = [
                 <div class="mb-5 flex flex-col items-center gap-4 transition-all duration-500 ease-in-out md:flex-row">
                     <Fade bottom client:load>
                         <p class="text-center text-base font-bold text-primary-1 md:text-xl xl:text-2xl">
-                            As a supplier, you can extend credit terms to your customers.
+                            Turn your plastics and paper into instant cash or points - accessible via app or USSD, even
+                            without internet.
                         </p>
                     </Fade>
                 </div>
             </div>
-        </section>
-    </section>
-    <section class="w-full overflow-hidden bg-primary-2">
-        <section
-            class="container relative mt-12 w-full max-w-[1700px] space-y-8 px-container-base pb-12 md:pb-20 lg:space-y-[5rem] lg:px-container-lg xl:px-container-xl">
-            <div class="relative flex w-full flex-col justify-center gap-[2.5rem] md:gap-[2.75rem]">
-                <div class="flex flex-col items-center justify-center gap-6 2xl:gap-8">
-                    <h4
-                        class="text-center text-[1.3rem] font-[700] leading-[130%] tracking-[0.02rem] transition-all duration-500 ease-in-out md:max-w-[90rem] md:leading-[4rem] md:tracking-[0.0225rem] lg:ml-[-0.2rem] lg:text-[2.3rem] xxl:text-[2.7rem]">
-                        <TextFormat
-                            text={`How it works for Suppliers`}
-                            keyword={"Suppliers"}
-                            keywordClassName="text-primary-1  transition-all duration-500 ease-in-out"
-                        />
-                    </h4>
-                </div>
-            </div>
-            <section class="mx-auto grid w-full gap-[3rem] rounded-lg pb-20 md:grid-cols-[1fr_1fr] lg:max-w-[70%]">
-                {
-                    sections.map((item, index) => {
-                        return (
-                            <>
-                                <article class="flex  items-center gap-4 rounded-2xl border-[1px]  px-5 py-8  shadow-md xxl:gap-12 xxl:py-12">
-                                    <div class="flex flex-col gap-2 px-2  xxl:gap-4">
-                                        <img src={url(item.img)} alt="" class="w-12 xl:w-12" />
-                                        <h3 class="font-semibold md:text-base xl:text-lg">
-                                            <span>{index + 1 < 10 ? `0${index + 1}` : index + 1}.</span> {item.heading}
-                                        </h3>
-                                        <p class="text-[0.8rem] text-sm leading-[130%] tracking-[0.02rem] md:leading-[2rem] md:tracking-[0.0225rem] xl:text-base">
-                                            {item.paragraph}
-                                        </p>
-                                    </div>
-                                </article>
-                            </>
-                        );
-                    })
-                }
-            </section>
         </section>
     </section>
 
@@ -223,25 +186,6 @@ const images = [
             <InfoAboutCompany client:only />
         </section>
     </section>
-    <!-- customer reviews -->
-    <!-- <section class="w-full scroll-mt-28 bg-primary-1">
-      <section
-         class="w-full container pt-24 px-container-base lg:px-container-lg xl:px-container-xl relative max-w-[1700px]"
-      >
-         <div class="flex flex-col justify-center items-center sm:text-center lg:px-8 px-6 gap-6">
-            <p class="text-2xl font-bold tracking-tight text-center text-white lg:text-4xl">
-               See What Our Customer Says
-            </p>
-            <p class="leading-8 text-center text-white font-medium text-lg">
-               See how our app transforms our customer’s finances and can
-               <br />do the same for you.
-            </p>
-            <div class="w-12 h-[0.15rem] bg-white"></div>
-         </div>
-         <ReviewSide client:load />
-      </section>
-   </section> -->
-    <!-- test animaions -->
     <section class="w-full scroll-mt-28 bg-primary-1" id="download">
         <section
             class="container relative w-full max-w-[1700px] overflow-x-hidden px-container-base py-[4rem] text-white md:py-[10rem] lg:px-container-lg xl:px-container-xl">
@@ -257,8 +201,8 @@ const images = [
                     <h2
                         class="max-w-[90rem] text-center text-[2rem] font-[600] leading-[130%] tracking-[0.02rem] text-white transition-all duration-500 ease-in-out md:text-[2.6rem] md:tracking-[0.0225rem] lg:text-[3.4rem] xxl:text-[4rem] xxl:leading-[5rem]">
                         <TextFormat
-                            text={`Enables your construction business grow without worrying about capital`}
-                            keyword={"capital"}
+                            text={`Turn your waste into wealth while building a cleaner Nigeria`}
+                            keyword={"wealth"}
                             keywordClassName="text-secondary-1 transition-all duration-500 ease-in-out"
                         />
                     </h2>
@@ -276,6 +220,7 @@ const images = [
             </div>
         </section>
     </section>
+
     <section
         id="contact"
         class="container relative w-full max-w-[1700px] scroll-mt-[1rem] rounded-lg px-container-base py-[3rem] pb-20 md:py-[10rem] lg:px-container-lg xl:px-container-xl">

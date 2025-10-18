@@ -42,9 +42,6 @@ const FormSchema = z.object({
 		required_error: "Name is required.",
 	}),
 
-	business_type: z.string({
-		required_error: "Business Name is required.",
-	}),
 	message: z
 		.string()
 		.min(4, {
@@ -126,8 +123,8 @@ const GetStartedForm = () => {
                 <div>
                     <h3 className="mb-4 max-w-[60rem] text-center text-[1.1rem] font-[600] leading-[130%] tracking-[0.02rem] text-secondary-2 transition-all duration-500 ease-in-out md:text-[1.6rem] md:leading-[2rem] md:tracking-[0.0225rem] ">
                         <TextFormat
-                            text={`Ready to Transform Your Construction Projects?`}
-                            keyword={"Construction"}
+                            text={`Ready to Transform Your Waste into Wealth?`}
+                            keyword={"Waste"}
                             keywordClassName="text-primary-1 transition-all duration-500 ease-in-out"
                         />
                     </h3>
@@ -171,38 +168,6 @@ const GetStartedForm = () => {
                                                     placeholder="Enter your email "
                                                 />
                                             </FormControl>
-                                        </div>
-                                        <FormMessage className="mt-1 text-base" />
-                                    </FormItem>
-                                )}
-                            />
-
-                            <FormField
-                                control={form.control}
-                                name="business_type"
-                                render={({ field }) => (
-                                    <FormItem>
-                                        <div className="relative">
-                                            <Select
-                                                onValueChange={field.onChange}
-                                                defaultValue={field.value}
-                                                {...field}>
-                                                <FormControl>
-                                                    <SelectTrigger className="py-7 text-lg text-gray-500 transition-all duration-300  ease-in-out  placeholder:text-lg focus-within:text-secondary-2 focus:bg-[#DBF1FF] ">
-                                                        <SelectValue placeholder="Business Type" className="  " />
-                                                    </SelectTrigger>
-                                                </FormControl>
-                                                <SelectContent className="bg-primary-1">
-                                                    {BUSINESS_TYPES.map((type) => (
-                                                        <SelectItem
-                                                            className="py-3 text-lg text-white"
-                                                            value={type.value}
-                                                            key={type.value}>
-                                                            {type.text}
-                                                        </SelectItem>
-                                                    ))}
-                                                </SelectContent>
-                                            </Select>
                                         </div>
                                         <FormMessage className="mt-1 text-base" />
                                     </FormItem>

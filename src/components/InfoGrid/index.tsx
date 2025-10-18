@@ -9,83 +9,75 @@ const InfoGrid = () => {
 	const data = [
         {
             image: "/images/receipts/iconOne.svg",
-            heading: "Connect with main contractors on Greenvest Africa",
-            paragraph: "Start by linking with your main contractor on Greenvest Africa and get your project rolling!.",
+            heading: "Sign up and start recycling",
+            paragraph:
+                "Download our app or dial our USSD code to create your account and begin your recycling journey.",
         },
         {
             image: "/images/receipts/iconTwo.svg",
-            heading: "Upload your project details to the Greenvest Africa platform",
-            paragraph: "Easily upload your project agreement and material requirements for swift approval.",
+            heading: "Collect and sort your materials",
+            paragraph: "Gather your plastics and paper, keep them clean and sorted for maximum value.",
         },
         {
             image: "/images/receipts/icon.svg",
-            heading: "Get your materials financed",
-            paragraph: "Receive direct financing for your materials, ensuring no delays in your project.",
+            heading: "Drop off at our collection points",
+            paragraph: "Visit any Greenvest drop-off location near you or request pickup through the app.",
         },
         {
             image: "/images/receipts/icon.svg",
-            heading: "Simple Fee",
-            paragraph: "Pay a simple fee on the financed amount, with no hidden charges.",
+            heading: "Get rewarded instantly",
+            paragraph: "Receive cash or points immediately via app, USSD, or direct payment at drop-off points.",
         },
     ];
-	return (
-		<div>
-			<p className="mb-12 max-w-[37.75rem] text-[1.4rem] font-semibold tracking-[0.00563rem] md:text-[1.6rem] md:leading-[1.7rem]">
-				How it works for Subcontractors
-			</p>
+    return (
+        <div>
+            <p className="mb-12 max-w-[37.75rem] text-[1.4rem] font-semibold tracking-[0.00563rem] md:text-[1.6rem] md:leading-[1.7rem]">
+                How it works
+            </p>
 
-			<section className="grid gap-[3rem] rounded-lg md:mt-12 md:gap-[1rem] lg:grid-cols-[1fr_1fr]">
-				{data.map((item: any, index: number) => {
-					return (
-						<motion.div variants={fadeIn("down", "spring", index * 0.5, 0.75)}>
-							<Tilt
-								options={{
-									max: 45,
-									scale: 1,
-									speed: 950,
-								}}
-								className=""
-							>
-								<article className="flex flex-col items-start justify-between gap-4 rounded-2xl border-[1px]  px-5 py-8  shadow-md xxl:gap-12 xxl:py-12">
-									<img src={url(item.image)} alt="" className="w-12 xl:w-12" />
-									<div className="flex flex-col gap-2 px-2  xxl:gap-4">
-										<h3 className="font-semibold md:text-base ">
-											{item.heading}
-										</h3>
-										<p className="text-[0.8rem] text-sm leading-[130%] tracking-[0.02rem] md:leading-[2rem] md:tracking-[0.0225rem]">
-											{item.paragraph}
-										</p>
-									</div>
-								</article>
-							</Tilt>
-						</motion.div>
-					);
-				})}
-			</section>
-			<div className="mt-12 hidden items-center  gap-4 md:flex">
-				<a
-					href="#contact"
-					className={cn(
-						"hidden items-center  justify-center  rounded-md bg-primary-1 px-6 py-4 shadow-1 transition-opacity duration-300 ease-in-out hover:opacity-90 active:opacity-100 md:flex md:w-fit lg:px-16 "
-					)}
-				>
-					<span className="font-[500] leading-[1.5rem] tracking-[0.02875rem] text-white">
-						Get Started
-					</span>
-				</a>
-				<a
-					href="#contact"
-					className={cn(
-						"hidden items-center  justify-center  rounded-md border border-primary-1 px-6 py-4  transition-opacity duration-300 ease-in-out hover:opacity-90 active:opacity-100 md:flex md:w-fit lg:px-12 "
-					)}
-				>
-					<span className="font-[500] leading-[1.5rem] tracking-[0.02875rem]">
-						Request a Demo
-					</span>
-				</a>
-			</div>
-		</div>
-	);
+            <section className="grid gap-[3rem] rounded-lg md:mt-12 md:gap-[1rem] lg:grid-cols-[1fr_1fr]">
+                {data.map((item: any, index: number) => {
+                    return (
+                        <motion.div variants={fadeIn("down", "spring", index * 0.5, 0.75)}>
+                            <Tilt
+                                options={{
+                                    max: 45,
+                                    scale: 1,
+                                    speed: 950,
+                                }}
+                                className="">
+                                <article className="flex flex-col items-start justify-between gap-4 rounded-2xl border-[1px]  px-5 py-8  shadow-md xxl:gap-12 xxl:py-12">
+                                    <img src={url(item.image)} alt="" className="w-12 xl:w-12" />
+                                    <div className="flex flex-col gap-2 px-2  xxl:gap-4">
+                                        <h3 className="font-semibold md:text-base ">{item.heading}</h3>
+                                        <p className="text-[0.8rem] text-sm leading-[130%] tracking-[0.02rem] md:leading-[2rem] md:tracking-[0.0225rem]">
+                                            {item.paragraph}
+                                        </p>
+                                    </div>
+                                </article>
+                            </Tilt>
+                        </motion.div>
+                    );
+                })}
+            </section>
+            <div className="mt-12 hidden items-center  gap-4 md:flex">
+                <a
+                    href="#contact"
+                    className={cn(
+                        "hidden items-center  justify-center  rounded-md bg-primary-1 px-6 py-4 shadow-1 transition-opacity duration-300 ease-in-out hover:opacity-90 active:opacity-100 md:flex md:w-fit lg:px-16 "
+                    )}>
+                    <span className="font-[500] leading-[1.5rem] tracking-[0.02875rem] text-white">Join Us</span>
+                </a>
+                <a
+                    href="#contact"
+                    className={cn(
+                        "hidden items-center  justify-center  rounded-md border border-primary-1 px-6 py-4  transition-opacity duration-300 ease-in-out hover:opacity-90 active:opacity-100 md:flex md:w-fit lg:px-12 "
+                    )}>
+                    <span className="font-[500] leading-[1.5rem] tracking-[0.02875rem]">Request a Demo</span>
+                </a>
+            </div>
+        </div>
+    );
 };
 
 export default SectionWrapper(InfoGrid, "infoGrid");

@@ -34,17 +34,15 @@ const ContactSales: React.FC<ContactSalesProps> = ({ email, phone }) => {
       },
    ];
    return (
-      <section className="container relative w-full max-w-[1700px] px-container-base lg:px-container-lg xl:px-container-xl">
-         <div className="mb-[2rem] flex flex-col items-center gap-4 ">
-            <h2 className=" text-center text-3xl  font-black md:text-[3rem]  ">
-               Chat with our amiable team
-            </h2>
-            <h3 className=" mb-16  text-center text-base   leading-7 opacity-[0.85] md:text-2xl">
-               We are here to help you. Please fill the form below or contact us
-            </h3>
-         </div>
-         <div className="grid gap-16 md:grid-cols-1">
-            {/* <section className="grid gap-16 md:gap-8 md:grid-cols-[1fr_1fr] place-items-start  rounded-lg w-full">
+       <section className="container relative w-full max-w-[1700px] px-container-base lg:px-container-lg xl:px-container-xl">
+           <div className="mb-[2rem] flex flex-col items-center gap-4 ">
+               <h2 className=" text-center text-3xl  font-black md:text-[3rem]  ">Chat with our amiable team</h2>
+               <h3 className=" mb-16  text-center text-base   leading-7 opacity-[0.85] md:text-2xl">
+                   We are here to help you. Please fill the form below or contact us
+               </h3>
+           </div>
+           <div className="grid gap-16 md:grid-cols-1 md:max-w-[700px] lg:mx-auto">
+               {/* <section className="grid gap-16 md:gap-8 md:grid-cols-[1fr_1fr] place-items-start  rounded-lg w-full">
                {sections.map((item, index: number) => {
                   return (
                      <article className="flex flex-col     gap-4   rounded-lg" key={index}>
@@ -59,9 +57,9 @@ const ContactSales: React.FC<ContactSalesProps> = ({ email, phone }) => {
                   );
                })}
             </section> */}
-            <ContactUsForm />
-         </div>
-      </section>
+               <ContactUsForm />
+           </div>
+       </section>
    );
 };
 

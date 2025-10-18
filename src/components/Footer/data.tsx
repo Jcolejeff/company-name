@@ -70,8 +70,8 @@ export const FooterLinksData = [
                 //    url: "#faq",
                 // },
                 {
-                    title: "Support@Greenvest Africa.com",
-                    url: "mailto:support@joi.com",
+                    title: "greenvestingafrica@gmail.com",
+                    url: "mailto:greenvestingafrica@gmail.com",
                 },
             ],
         },

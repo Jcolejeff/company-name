@@ -34,14 +34,14 @@ const HeroSlide = () => {
 
    const reviews = [
        {
+           color: "text-primary-1 ",
+           text: `Plastics.`,
+           date: "25 june 2023",
+       },
+       {
            color: "text-[#ffc504]",
            text: `Papers`,
            date: "15 may 2023",
-       },
-       {
-           color: "text-[#EB6802]",
-           text: `Plastics.`,
-           date: "25 june 2023",
        },
        {
            color: "text-primary-1 ",

@@ -45,8 +45,8 @@ const Menu = () => {
         <>
             <div
                 onClick={() => setMenuOpen(true)}
-                className="relative z-[100] grid h-[3rem] w-[3rem] cursor-pointer place-items-center rounded-[3.5rem] border border-[#E8E7EA] bg-slate-100 transition-colors duration-300 ease-in-out active:bg-transparent">
-                <img src={url("/svgs/menuIcon.svg")} alt="menu" />
+                className="relative z-[100] grid h-[3rem] w-[3rem] cursor-pointer place-items-center rounded-[3.5rem] border border-[#E8E7EA] bg-primary-1 transition-colors duration-300 ease-in-out active:bg-transparent">
+                <img src={url("/images/menuIcon.svg")} alt="menu" />
             </div>
 
             {typeof window !== "undefined" &&

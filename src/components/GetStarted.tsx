@@ -144,7 +144,7 @@ const GetStartedForm = () => {
                                     <div className="relative">
                                         <FormControl>
                                             <Input
-                                                className="py-7 text-lg transition-all duration-300 ease-in-out  placeholder:text-lg  placeholder:text-gray-300 focus-within:placeholder:text-secondary-2 focus:bg-[#DBF1FF]  "
+                                                className="py-7 bg-white text-lg transition-all duration-300 ease-in-out  placeholder:text-lg  placeholder:text-gray-300 focus-within:placeholder:text-secondary-2 focus:bg-[#DBF1FF]  "
                                                 placeholder="Name"
                                                 {...field}
                                             />
@@ -154,7 +154,7 @@ const GetStartedForm = () => {
                                 </FormItem>
                             )}
                         />
-                        <section className="  grid grid-cols-1 gap-6 md:grid-cols-[1fr_1fr] ">
+                        <section className="  grid grid-cols-1 gap-6  ">
                             <FormField
                                 control={form.control}
                                 name="user_email"

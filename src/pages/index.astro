@@ -91,11 +91,7 @@ const images = [
 ---
 
 <Layout title="Greenvest Africa">
-    <section
-        class="mt-20 w-full"
-        style={{
-            background: ` #F8FAFC url('/images/landing-page/bg.svg') no-repeat fixed  center / cover`,
-        }}>
+    <section class="w-full bg-primary-1/10 pt-24">
         <LandingPageHero client:load />
         <!-- <section class="w-full scroll-mt-[-20rem]">
          <section
@@ -128,7 +124,7 @@ const images = [
             <Features client:only />
         </section>
     </section>
-    <section class="w-full scroll-mt-28 bg-primary-2" id="download">
+    <section class="w-full scroll-mt-28 bg-primary-1/10" id="download">
         <!-- info grid icon cards sections -->
         <section
             class="container relative grid w-full max-w-[1700px] gap-[5rem] rounded-lg px-container-base py-[3rem] pb-20 md:grid-cols-[1fr_1fr] md:py-[5rem] md:pb-[7.25rem] md:pt-[6rem] lg:px-container-lg xl:px-container-xl">
@@ -152,7 +148,7 @@ const images = [
             <InfoGrid client:only />
         </section>
     </section>
-    <section class="w-full bg-primary-2">
+    <section class="w-full bg-primary-1/10">
         <section
             class="container relative w-full max-w-[1700px] px-container-base py-[3rem] md:pt-[6rem] lg:px-container-lg xl:px-container-xl">
             <div class="flex flex-col items-center justify-center gap-6 2xl:gap-8">
@@ -220,10 +216,11 @@ const images = [
             </div>
         </section>
     </section>
-
-    <section
-        id="contact"
-        class="container relative w-full max-w-[1700px] scroll-mt-[1rem] rounded-lg px-container-base py-[3rem] pb-20 md:py-[10rem] lg:px-container-lg xl:px-container-xl">
-        <GetStarted client:only />
+    <section class="w-full bg-primary-1/10">
+        <section
+            id="contact"
+            class="container relative w-full max-w-[1700px] scroll-mt-[1rem] rounded-lg px-container-base py-[3rem] pb-20 md:py-[10rem] lg:px-container-lg xl:px-container-xl">
+            <GetStarted client:only />
+        </section>
     </section>
 </Layout>

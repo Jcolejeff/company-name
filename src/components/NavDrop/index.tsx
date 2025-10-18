@@ -73,7 +73,7 @@ const NavDrop = ({ darkNavBg }: INavDrop) => {
            <NavigationMenu>
                <NavigationMenuList>
                    <NavigationMenuItem>
-                       <span className=" block cursor-pointer px-4   font-[400] leading-[1.5rem] tracking-[0.005rem] lg:text-[1.15rem]">
+                       <span className=" block cursor-pointer px-4   font-[600] leading-[1.5rem] tracking-[0.005rem] lg:text-[1.45rem]">
                            <a href={url("/about-us")}>About</a>
                        </span>
                    </NavigationMenuItem>
@@ -94,7 +94,7 @@ const NavDrop = ({ darkNavBg }: INavDrop) => {
 
                    <NavigationMenuItem>
                        <span
-                           className={`  block cursor-pointer px-4  font-[400]  leading-[1.5rem] tracking-[0.005rem] lg:text-[1.15rem] `}>
+                           className={`  block cursor-pointer px-4  font-[600]  leading-[1.5rem] tracking-[0.005rem] lg:text-[1.45rem] `}>
                            <a href={url("/contact-us")}>Contact Us</a>
                        </span>
                    </NavigationMenuItem>

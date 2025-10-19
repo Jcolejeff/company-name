@@ -62,11 +62,11 @@ const ComingSoonModal = () => {
 
 		try {
 			const data = await emailjs.sendForm(
-				"service_k08w62w",
-				"template_fsbxx8c",
-				formRef.current as HTMLFormElement,
-				"X3OkpMZncUC0S79v4"
-			);
+                "service_d7h2fx2",
+                "template_qijh2yc",
+                formRef.current as HTMLFormElement,
+                "X3OkpMZncUC0S79v4"
+            );
 			// setMessage({ text: data?.text, isError: false });
 			toast.info("Thanks for signing up, We will notify you when we launch!", {
 				position: "top-right",

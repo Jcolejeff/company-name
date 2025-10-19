@@ -86,7 +86,7 @@ function ContactUsForm({ businessType, title, subTitle, breadcrumb }: Iprops) {
 
       try {
          const data = await emailjs.sendForm(
-             "service_k08w62w",
+             "service_d7h2fx2",
              "template_qijh2yc",
              formRef.current as HTMLFormElement,
              "X3OkpMZncUC0S79v4"

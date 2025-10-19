@@ -220,7 +220,7 @@ const GetStartedForm = () => {
             </a> */}
             </section>
             <div className=" rounded-md bg-cover bg-center filter transition-all  duration-300  ease-in-out hover:cursor-pointer   md:w-1/2">
-                <img src={url("/images/modal.png")} className="h-full w-full  rounded-md object-cover " alt="" />
+                <img src={url("/images/modal.webp")} className="h-full w-full  rounded-md object-cover " alt="" />
             </div>
         </div>
     );

@@ -130,7 +130,7 @@ const GetStartedForm = () => {
                     </h3>
 
                     <h4 className="max-w-[38.875rem] text-center text-[0.8rem] font-[500] leading-[2.2rem] text-secondary-2 md:text-[1rem] md:leading-[2rem] xxl:max-w-[45.875rem]  xxl:text-[1.3rem]">
-                        Join Greenvest Africa Today!
+                        Join Greenpact Africa Today!
                     </h4>
                 </div>
 
@@ -220,7 +220,11 @@ const GetStartedForm = () => {
             </a> */}
             </section>
             <div className=" rounded-md bg-cover bg-center filter transition-all  duration-300  ease-in-out hover:cursor-pointer   md:w-1/2">
-                <img src={url("/images/modal.webp")} className="h-full w-full  rounded-md object-cover " alt="" />
+                <img
+                    src={url("/images/new/IMG_9694.webp")}
+                    className="h-full w-full   md:max-h-[400px] rounded-md object-cover "
+                    alt=""
+                />
             </div>
         </div>
     );

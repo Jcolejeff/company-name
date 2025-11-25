@@ -12,7 +12,7 @@ const Footer = ({}: IFooter) => {
                 <div className="  flex  flex-col  gap-8  ">
                     <div className="">
                         <a href="/" className="flex items-center gap-4">
-                            <img src={url("/images/logoBlue.png")} alt="" className="w-24 object-contain lg:w-32" />
+                            <img src={url("/images/africa1.png")} alt="" className="w-24 object-contain lg:w-[12rem]" />
                         </a>
                     </div>
                 </div>
@@ -41,19 +41,19 @@ const Footer = ({}: IFooter) => {
             </div>
             <div className=" flex flex-col-reverse justify-between gap-8 py-6 pt-9 md:flex-row md:gap-0">
                 <p className="  font-semibold leading-[2rem] tracking-[0.00625rem]">
-                    Copyright © {new Date().getFullYear()} Greenvest Africa technologies ltd All Rights Reserved
+                    Copyright © {new Date().getFullYear()} Greenpact Africa technologies ltd All Rights Reserved
                 </p>
                 <div className="flex w-1/2   gap-8">
-                    <a href="https://www.linkedin.com/company/greenvest-africa/">
+                    <a href="https://www.linkedin.com/company/greenpact-africa/">
                         <img src={url("/images/footer/fb.svg")} alt="" />
                     </a>
-                    <a href="https://www.linkedin.com/company/greenvest-africa/">
+                    <a href="https://www.linkedin.com/company/greenpact-africa/">
                         <img src={url("/images/footer/insta.svg")} alt="" />
                     </a>
-                    <a href="https://www.linkedin.com/company/greenvest-africa/">
+                    <a href="https://www.linkedin.com/company/greenpact-africa/">
                         <img src={url("/images/footer/link.svg")} alt="" />
                     </a>
-                    <a href="https://www.linkedin.com/company/greenvest-africa/">
+                    <a href="https://www.linkedin.com/company/greenpact-africa/">
                         <img src={url("/images/footer/x.svg")} alt="" />
                     </a>
                 </div>

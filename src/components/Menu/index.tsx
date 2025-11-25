@@ -64,9 +64,9 @@ const Menu = () => {
                                     <div className="flex w-full items-center justify-between border-b border-b-gray-300 pb-[0.75rem] pt-[1.5rem] md:pb-[1rem] lg:border-b-secondary-1">
                                         <a href="/" className="flex items-center gap-4">
                                             <img
-                                                src={url("/images/logoBlue.png")}
+                                                src={url("/images/africa1.png")}
                                                 alt="logo"
-                                                className="w-24 object-contain lg:w-32"
+                                                className="w-[9rem] object-contain lg:w-32"
                                             />
                                         </a>
 

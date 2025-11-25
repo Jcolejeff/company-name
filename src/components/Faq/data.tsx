@@ -5,8 +5,8 @@ export const FAQdata = [
         body: "",
         collection: "faq",
         data: {
-            question: "What is Greenvest Africa?",
-            answer: "Greenvest Africa is a pioneering platform that turns your waste into wealth. We reward individuals and businesses with instant cash or points for recycling plastics and paper. Simply drop off your materials at our collection points or use our mobile app, and get paid immediately via app, USSD, or cash.",
+            question: "What is Greenpact Africa?",
+            answer: "Greenpact Africa is a pioneering platform that turns your waste into wealth. We reward individuals and businesses with instant cash or points for recycling plastics and paper. Simply drop off your materials at our collection points or use our mobile app, and get paid immediately via app, USSD, or cash.",
         },
         render: null,
     },
@@ -16,7 +16,7 @@ export const FAQdata = [
         body: "",
         collection: "faq",
         data: {
-            question: "How does Greenvest Africa work?",
+            question: "How does Greenpact Africa work?",
             answer: "It's simple! Sign up on our mobile app or dial our USSD code. Collect and sort your plastics and paper. Bring them to any of our drop-off locations across Nigeria or request pickup through the app. Your materials are weighed, and you receive instant payment in cash, via mobile transfer, or as points you can redeem later.",
         },
         render: null,
@@ -50,7 +50,7 @@ export const FAQdata = [
         collection: "faq",
         data: {
             question: "What is USSD and how does it work?",
-            answer: "USSD is a mobile technology that works on any phone without internet. Dial our USSD code to check your balance, view nearby drop-off points, and request withdrawals even when you don't have data or WiFi. This makes Greenvest accessible to everyone across Nigeria.",
+            answer: "USSD is a mobile technology that works on any phone without internet. Dial our USSD code to check your balance, view nearby drop-off points, and request withdrawals even when you don't have data or WiFi. This makes Greenpact accessible to everyone across Nigeria.",
         },
         render: null,
     },
@@ -82,7 +82,7 @@ export const FAQdata = [
         body: "",
         collection: "faq",
         data: {
-            question: "Can businesses and organizations use Greenvest Africa?",
+            question: "Can businesses and organizations use Greenpact Africa?",
             answer: "Absolutely! We offer tailored Business Recycling solutions including scheduled pickups, bulk rates, dedicated account management, and monthly impact reports. This helps organizations meet their sustainability goals while earning from their waste.",
         },
         render: null,
@@ -93,8 +93,8 @@ export const FAQdata = [
         body: "",
         collection: "faq",
         data: {
-            question: "Are there any fees for using Greenvest Africa?",
-            answer: "No! Signing up and using Greenvest Africa is completely free. We make money by processing and reselling the recycled materials. You simply bring your waste and get paid - no hidden charges or subscription fees.",
+            question: "Are there any fees for using Greenpact Africa?",
+            answer: "No! Signing up and using Greenpact Africa is completely free. We make money by processing and reselling the recycled materials. You simply bring your waste and get paid - no hidden charges or subscription fees.",
         },
         render: null,
     },
@@ -104,8 +104,8 @@ export const FAQdata = [
         body: "",
         collection: "faq",
         data: {
-            question: "How does Greenvest Africa ensure secure transactions?",
-            answer: "We prioritize the security of all transactions on our platform. Greenvest Africa uses advanced encryption and security protocols to protect user data and financial transactions. Regular audits and compliance checks are conducted to maintain high security standards.",
+            question: "How does Greenpact Africa ensure secure transactions?",
+            answer: "We prioritize the security of all transactions on our platform. Greenpact Africa uses advanced encryption and security protocols to protect user data and financial transactions. Regular audits and compliance checks are conducted to maintain high security standards.",
         },
         render: null,
     },
@@ -126,7 +126,7 @@ export const FAQdata = [
         body: "",
         collection: "faq",
         data: {
-            question: "How can I contact Greenvest Africa for support?",
+            question: "How can I contact Greenpact Africa for support?",
             answer: "For any support or inquiries, you can contact us through the support section on our website or mobile app. We offer customer service via email, phone, WhatsApp, and live chat to assist you with any questions or issues you may have.",
         },
         render: null,

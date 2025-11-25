@@ -70,8 +70,8 @@ export const FooterLinksData = [
                 //    url: "#faq",
                 // },
                 {
-                    title: "greenvestingafrica@gmail.com",
-                    url: "mailto:greenvestingafrica@gmail.com",
+                    title: "greenpactingafrica@gmail.com",
+                    url: "mailto:greenpactingafrica@gmail.com",
                 },
             ],
         },

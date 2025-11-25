@@ -58,7 +58,7 @@ const experiences = [
         ],
     },
     {
-        title: "Build a Sustainable Future on Your Terms with Greenvest Africa by Your Side",
+        title: "Build a Sustainable Future on Your Terms with Greenpact Africa by Your Side",
         company_name: "Street Bazaar",
         icon: "/images/landing-page/zcomb.svg",
         iconBg: "#E6DEDD",

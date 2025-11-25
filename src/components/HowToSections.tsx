@@ -72,7 +72,7 @@ const HowToSections = () => {
                     ♻️
                 </h5>
                 <p className=" mt-4 font-[16px] leading-[30px] md:text-lg">
-                    Let's find out how Greenvest Africa can help you achieve your goals.
+                    Let's find out how Greenpact Africa can help you achieve your goals.
                 </p>
             </div>
 

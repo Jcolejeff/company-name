@@ -27,20 +27,20 @@ const PriceList = () => {
             title: "Business",
             price: prices[index].prices[0],
             for: "Ideal for growing businesses that need more customers",
-            features: ["Customizable Greenvest Africa", "Basic Support", "One Integration", "Email support"],
+            features: ["Customizable Greenpact Africa", "Basic Support", "One Integration", "Email support"],
         },
         {
             title: "Business Pro",
             price: prices[index].prices[1],
             for: "For large organization with specific needs",
-            features: ["Customizable Greenvest Africa", "Priority support", "Three Integration", "Email support"],
+            features: ["Customizable Greenpact Africa", "Priority support", "Three Integration", "Email support"],
         },
         {
             title: "Business Max",
             price: prices[index].prices[2],
             for: "For large organization with specific needs",
             features: [
-                "Customizable Greenvest Africa",
+                "Customizable Greenpact Africa",
                 "Priority support",
                 "One Integration",
                 "Email support",

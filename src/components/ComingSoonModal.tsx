@@ -53,75 +53,73 @@ const ComingSoonModal = () => {
         defaultValues: {
             user_email: "",
             message:
-                "Hi,i just signed up to join the Greenvest Africa when you launch!, please notify me when you launch",
+                "Hi,i just signed up to join the Greenpact Africa when you launch!, please notify me when you launch",
         },
     });
 
-	async function onSubmit(data: z.infer<typeof FormSchema>) {
-		setFormIsLoading(true);
+    async function onSubmit(data: z.infer<typeof FormSchema>) {
+        setFormIsLoading(true);
 
-		try {
-			const data = await emailjs.sendForm(
+        try {
+            const data = await emailjs.sendForm(
                 "service_d7h2fx2",
                 "template_qijh2yc",
                 formRef.current as HTMLFormElement,
                 "X3OkpMZncUC0S79v4"
             );
-			// setMessage({ text: data?.text, isError: false });
-			toast.info("Thanks for signing up, We will notify you when we launch!", {
-				position: "top-right",
-				autoClose: 5000,
-				hideProgressBar: false,
-				closeOnClick: true,
-				pauseOnHover: true,
-				draggable: true,
-				progress: undefined,
-				theme: "colored",
-			});
-			setTimeout(() => {
-				setModalOpen(false);
-			}, 3000);
+            // setMessage({ text: data?.text, isError: false });
+            toast.info("Thanks for signing up, We will notify you when we launch!", {
+                position: "top-right",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: "colored",
+            });
+            setTimeout(() => {
+                setModalOpen(false);
+            }, 3000);
 
-			setSuccess(true);
-		} catch (error: any) {
-			setMessage({ text: error?.error, isError: true });
+            setSuccess(true);
+        } catch (error: any) {
+            setMessage({ text: error?.error, isError: true });
 
-			toast.error("Error sending message, please try again", {
-				position: "top-right",
-				autoClose: 5000,
-				hideProgressBar: false,
-				closeOnClick: true,
-				pauseOnHover: true,
-				draggable: true,
-				progress: undefined,
-				theme: "colored",
-			});
-		}
+            toast.error("Error sending message, please try again", {
+                position: "top-right",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: "colored",
+            });
+        }
 
-		setFormIsLoading(false);
-	}
+        setFormIsLoading(false);
+    }
 
-	useEffect(() => {
-		// Check if the modal has been opened in this session
-		const hasOpenedInSession = sessionStorage.getItem(
-			"modalHasOpenedInSession"
-		);
+    useEffect(() => {
+        // Check if the modal has been opened in this session
+        const hasOpenedInSession = sessionStorage.getItem("modalHasOpenedInSession");
 
-		if (!hasOpenedInSession) {
-			// Check if the modal has been opened before in any session
-			const hasOpened = localStorage.getItem("modalHasOpened");
+        if (!hasOpenedInSession) {
+            // Check if the modal has been opened before in any session
+            const hasOpened = localStorage.getItem("modalHasOpened");
 
-			if (!hasOpened) {
-				// If the modal has not been opened before in any session, open it and set modalHasOpened to true in localStorage
-				localStorage.setItem("modalHasOpened", "true");
-			}
+            if (!hasOpened) {
+                // If the modal has not been opened before in any session, open it and set modalHasOpened to true in localStorage
+                localStorage.setItem("modalHasOpened", "true");
+            }
 
-			// Set modalHasOpenedInSession to true in sessionStorage whether or not it has been opened before in any session
-			sessionStorage.setItem("modalHasOpenedInSession", "true");
-			setModalOpen(true); // Open the modal for the first visit or refresh on the homepage
-		}
-	}, []);
-	return (
+            // Set modalHasOpenedInSession to true in sessionStorage whether or not it has been opened before in any session
+            sessionStorage.setItem("modalHasOpenedInSession", "true");
+            setModalOpen(true); // Open the modal for the first visit or refresh on the homepage
+        }
+    }, []);
+    return (
         <Dialog onOpenChange={(i: boolean) => setModalOpen(i)} open={modalOpen}>
             <DialogTrigger>
                 {" "}
@@ -214,7 +212,7 @@ const ComingSoonModal = () => {
                             </form>
                         </Form>
                         <a
-                            href="mailto:support@jointheGreenvest Africa.com"
+                            href="mailto:support@jointheGreenpact Africa.com"
                             className="text-center font-semibold text-primary-1 underline md:text-lg">
                             Or Contact Us
                         </a>

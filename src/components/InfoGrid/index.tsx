@@ -21,7 +21,7 @@ const InfoGrid = () => {
         {
             image: "/images/receipts/icon.svg",
             heading: "Drop off at our collection points",
-            paragraph: "Visit any Greenvest drop-off location near you or request pickup through the app.",
+            paragraph: "Visit any Greenpact drop-off location near you or request pickup through the app.",
         },
         {
             image: "/images/receipts/icon.svg",

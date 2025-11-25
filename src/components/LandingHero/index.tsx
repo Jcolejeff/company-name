@@ -55,7 +55,7 @@ const LandingPageHero = () => {
                         // 	}}
                     >
                         <img
-                            src="/images/hero-new.webp"
+                            src="/images/new/IMG_9703.webp"
                             className="z-20 rounded-md  h-full w-full sm:object-contain xxl:object-cover   "
                         />
                     </div>

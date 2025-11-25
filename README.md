@@ -1,7 +1,7 @@
-# Greenvest Africa landing
+# Greenpact Africa landing
 
 ```
-landing page for the Greenvest Africa platform
+landing page for the Greenpact Africa platform
 ```
 
 ## 🚀 Project Structure
